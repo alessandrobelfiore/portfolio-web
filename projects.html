@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Playfair+Display&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>Alessandro Belfiore</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="row--mobile">
+                    <h2 class="nav__title col noselect">Alessandro Belfiore</h2>
+                    <div class="nav__button">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="nav__list col noselect">
+                        <li class="nav__item"><a class="link--navbar link" href="./index.html">About Me</a></li>
+                        <li class="nav__item"><a class="link--navbar link" href="./projects.html">Projects</a></li>
+                        <li class="nav__item"><a class="link--navbar link" href="./contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section projects">
+        <div class="container">
+            <div class="presentation presentation--project">
+                <h2 class="presentation__text">Some of my projects</h2>
+                <hr class="divider">
+            </div>
+            <div class="row">
+                <div class="col project__frame">
+                    <a  href="https://github.com/alessandrobelfiore/CypherAndroid" 
+                        class="project__link link"
+                        target="_blank">
+                        <img src="img/cypher.png" alt="cypher in play" class="project__image">
+                    </a>
+                    <h3 class="project__title">Cypher</h3>
+                    <hr class="divider">
+                    <p class="project__description">A mobile multiplayer, competitive game played on a square grid. The objective is to connect all lines to each other before the opponent.</p>
+                    <p class="project__technologies">Java, Android Studio, SQLite</p>
+                </div>
+                <div class="col project__frame">
+                    <a  href="#" 
+                        class="project__link link" 
+                        target="_blank">
+                        <img src="img/zelda.png" alt="unity2d project in game" class="project__image">
+                    </a>
+                    <h3 class="project__title">Unnamed Unity2D project</h3>
+                    <hr class="divider">
+                    <p class="project__description">A Zelda-like Top-Down RPG in which you get to explore an interactive world, combining different elements to cast spells in order to beat enemies and solve puzzles.</p>
+                    <p class="project__technologies">Unity2D, C#</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col project__frame">
+                    <a  href="https://github.com/alessandrobelfiore/m_compc" 
+                        class="project__link link" 
+                        target="_blank">
+                        <img src="img/compiler.png" alt="compiler pipeline" class="project__image">
+                    </a>
+                    <h3 class="project__title">µcomp-Lang</h3>
+                    <hr class="divider">
+                    <p class="project__description">A simple compiler pipeline for a C-style, component based, toy language. It comprises of a lexer-parser step, semantical analysis, and code generation using LLVM.</p>
+                    <p class="project__technologies">OCaml, Menhir, LLVM</p>
+                </div>
+                <div class="col project__frame">
+                    <a  href="https://github.com/alessandrobelfiore/SPM" 
+                        class="project__link link" 
+                        target="_blank">
+                        <img src="img/gol.png" alt="cellular automaton" class="project__image">
+                    </a>
+                    <h3 class="project__title">Cellular Automata Parallel Framework</h3>
+                    <hr class="divider">
+                    <p class="project__description">A framework designed to solve parallel computation on a defined cellular automaton, using either C++ native threads or FastFlow nodes. The provided example is <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" class="link">Conway's Game of Life</a>.</p>
+                    <p class="project__technologies">C++, FastFlow</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logos container">
+            <div class="row--mobile">
+                <ul class="logos__list">
+                    <a href="#" class="logos__link"><img class="logo" src="img/github2.png" alt="github"></a>
+                    <a href="#" class="logos__link"><img class="logo" src="img/linkedin.png" alt="linkdin"></a>
+                    <a href="#" class="logos__link"><img class="logo" src="img/email.png" alt="email"></a>
+                </ul>
+                <div>
+                    <h3 class="footer__text">Created by AB</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="main.js"></script>
+</html>
