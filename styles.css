@@ -144,10 +144,6 @@ body {
     margin-left: 3em; 
 }
 
-.nav__item:hover {
-    opacity: 70%;
-}
-
 .nav__button {
     display: inline-block;
     cursor: pointer;
