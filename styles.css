@@ -100,6 +100,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 2.4rem;
     font-weight: 300;
+    color: var(--text__light);
 }
 
 .link--navbar {
@@ -207,24 +208,54 @@ body {
 }
 
 .project__image {
-    width: 270px;
-    height: 480px;
+    /* width: 270px;
+    height: 480px; */
     border-radius: 5%;
-    box-shadow: 1.5px 1.5px 20px var(--bckg__darkest);
+    box-shadow: 1.5px 1.5px 10px var(--bckg__darkest);
     /* border: 0.5px black solid; */
     margin-bottom: 0.5em;
 }
 
+.image--cypher {
+    width: 270px;
+    height: 480px;
+}
+
+.image--zelda {
+    width: 522px;
+    height: 300px;
+}
+
+.image--ucomp {
+    width: 270px;
+    height: 480px;
+}
+
+.image--cellular {
+    width: 350px;
+    height: 350px;
+}
+
 .project__frame {
     text-align: center;
+    /* color: white; */
     margin-bottom: 1.5em;
+    padding: 1em;
+    border-radius: 2px;
+    /* background-color: #3F6978; */
+    /* box-shadow: 1.5px 5px 8px 0 var(--bckg__darkest); */
 }
+
+/* .project__frame:hover {
+    box-shadow: 1.5px 5px 8px 0 var(--bckg__darkest);
+} */
 
 .presentation--project {
     font-size: 2.2rem;
 }
 
 .project__title {
+    text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 2.2rem;
@@ -239,6 +270,7 @@ body {
 }
 
 .project__technologies {
+    /* text-align: center; */
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
     font-size: 1.2rem;
@@ -302,7 +334,8 @@ footer {
 /* MEDIA */
 /* ******************************************** */
 
-@media (min-width: 900px) { /* FIXME images  */
+
+@media (min-width: 950px) {
     .nav__button {
         display: none;
     }
@@ -325,16 +358,44 @@ footer {
     .nav__item + .nav__item {
         margin-left: 1em;
     }
+
+    .row--navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 1100px) { /* FIXME images  */
+    /* .nav__button {
+        display: none;
+    }
+
+    .nav__list {
+        visibility: visible;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        margin-left: 1em;
+        overflow: auto;
+    }
+
+    .nav--visible {
+        flex-direction: row;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 1em;
+    } */
     
     .row {
         display: flex;
         width: 100%;
         justify-content: space-between;
     }
-
-    /* .project__frame {
-        margin: 0;
-    } */
 
     .col + .col {
         margin: 0 0 2em 2em;
