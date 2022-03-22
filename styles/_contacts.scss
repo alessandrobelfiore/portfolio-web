@@ -1,0 +1,25 @@
+.link--contact {
+    font-size: 1.8rem;
+    color: $text__dark;
+}
+
+.contact__list {
+    text-align: center;
+}
+
+.contacts__p + .contacts__p {
+    margin-top: 1.5em;
+}
+
+.skills {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills__element + .skills__element{
+    margin-top: 0.5em;
+}
