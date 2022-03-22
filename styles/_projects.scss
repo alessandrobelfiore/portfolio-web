@@ -1,0 +1,65 @@
+.project {
+    background-color: $text__light;
+
+    &__image {
+        /* width: 270px;
+        height: 480px; */
+        border-radius: 5%;
+        box-shadow: 1.5px 1.5px 10px $bckg__darkest;
+        /* border: 0.5px black solid; */
+        margin-bottom: 0.5em;
+    }
+
+    &__frame {
+        text-align: center;
+        margin-bottom: 1.5em;
+        padding: 1em;
+        border-radius: 2px;
+        /* background-color: #3F6978; */
+        /* box-shadow: 1.5px 5px 8px 0 $bckg__darkest; */
+    }
+
+    &__title {
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 2.2rem;
+        font-style: italic;
+        margin-bottom: 0.5em;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        margin-bottom: 0.5em;
+    }
+
+    &__technologies {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+}
+
+.image--cypher {
+    width: 270px;
+    height: 480px;
+}
+
+.image--zelda {
+    width: 522px;
+    height: 300px;
+}
+
+.image--ucomp {
+    width: 270px;
+    height: 480px;
+}
+
+.image--cellular {
+    width: 350px;
+    height: 350px;
+}
+
+.presentation--project {
+    font-size: 2.2rem;
+}
