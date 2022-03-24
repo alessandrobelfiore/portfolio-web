@@ -26,10 +26,49 @@
 
 .about_me {
   background-color: #FBFFF1;
+  /* z-index: -2; */
 }
 
 .presentation--home {
   font-size: 2.5rem;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .image {
+  height: 400px;
+  width: 400px;
+}
+
+.hero__image {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+}
+
+.hero__image:hover {
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
+}
+
+.hero__background {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  background-color: #3C3744;
+  -webkit-clip-path: polygon(0 0, 31% 0, 70% 100%, 0% 100%);
+          clip-path: polygon(0 0, 31% 0, 70% 100%, 0% 100%);
 }
 
 .project {
@@ -137,6 +176,10 @@ body {
   margin: 2em 0;
 }
 
+p + p {
+  margin-top: 1.5em;
+}
+
 .section {
   padding: 3em 0;
   min-height: 100vh;
@@ -189,6 +232,8 @@ body {
   background-color: #3C3744;
   padding: 0.5em 1em;
   border-radius: 99px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .link--curriculum:hover {

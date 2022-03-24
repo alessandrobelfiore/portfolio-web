@@ -36,6 +36,10 @@ body {
     margin: 2em 0;
 }
 
+p + p {
+    margin-top: 1.5em;
+}
+
 .section {
     padding: 3em 0;
     min-height: 100vh;
@@ -82,6 +86,7 @@ body {
     background-color: $bckg__darkest;
     padding: 0.5em 1em;
     border-radius: 99px;
+    transition: all .2s ease-in-out;
 
     &:hover {
         box-shadow: 0.5px 2px 8px $bckg__darkest;
@@ -95,6 +100,7 @@ body {
     justify-content: center;
     margin-top: 2em;
     min-height: 200px;
+    
 }
 
 /* ******************************************** */
