@@ -1,6 +1,22 @@
 .about_me {
     background-color: $text__light;
-    /* z-index: -2; */
+}
+
+@mixin image_dim($width, $height) {
+    .hero {
+        .image {
+            width: $width;
+            height: $height;
+        }
+        &__image {
+            width: $width;
+            height: $height;
+        }   
+        &__background {
+            width: $width;
+            height: $height;
+        }
+    }
 }
 
 .presentation--home {
@@ -8,20 +24,11 @@
 }
 
 .hero {
-    $img-width: 400px;
-    $img-height: 400px;
     display: flex;
     align-items: center;
 
-    .image {
-        height: $img-height;
-        width: $img-width;
-    }
-
     &__image {
         position: relative;
-        height: $img-height;
-        width: $img-width;
         transition: all .4s ease-in-out;
         filter: grayscale(90%);
         &:hover{
@@ -30,10 +37,15 @@
     }
 
     &__background {
-        height: $img-height;
-        width: $img-width;
         position: absolute;
         background-color: $bckg__darkest;
         clip-path: polygon(0 0, 31% 0, 70% 100%, 0% 100%);
     }
+}
+
+@media screen and  (min-width: 550px) {
+    @include image_dim(392px, 418px);
+}
+@media screen and (max-width: 550px) {
+    @include image_dim(327px, 358px);
 }

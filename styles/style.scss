@@ -109,7 +109,7 @@ p + p {
 
 .footer {
     background-color: $bckg__light;
-    padding: 1em 0 0.8em 0;
+    padding: 0.5em 0 0.5em 0;
 
     &__text {
         font-family: 'Quicksand', sans-serif;
@@ -125,6 +125,7 @@ p + p {
 
 .logos__link {
     color: $text__dark;
+    vertical-align: middle;
 }
 
 .logos__link + .logos__link {

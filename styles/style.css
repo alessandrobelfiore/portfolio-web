@@ -26,7 +26,6 @@
 
 .about_me {
   background-color: #FBFFF1;
-  /* z-index: -2; */
 }
 
 .presentation--home {
@@ -42,15 +41,8 @@
           align-items: center;
 }
 
-.hero .image {
-  height: 400px;
-  width: 400px;
-}
-
 .hero__image {
   position: relative;
-  height: 400px;
-  width: 400px;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   -webkit-filter: grayscale(90%);
@@ -63,12 +55,40 @@
 }
 
 .hero__background {
-  height: 400px;
-  width: 400px;
   position: absolute;
   background-color: #3C3744;
   -webkit-clip-path: polygon(0 0, 31% 0, 70% 100%, 0% 100%);
           clip-path: polygon(0 0, 31% 0, 70% 100%, 0% 100%);
+}
+
+@media screen and (min-width: 550px) {
+  .hero .image {
+    width: 392px;
+    height: 418px;
+  }
+  .hero__image {
+    width: 392px;
+    height: 418px;
+  }
+  .hero__background {
+    width: 392px;
+    height: 418px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero .image {
+    width: 327px;
+    height: 358px;
+  }
+  .hero__image {
+    width: 327px;
+    height: 358px;
+  }
+  .hero__background {
+    width: 327px;
+    height: 358px;
+  }
 }
 
 .project {
@@ -261,7 +281,7 @@ p + p {
 /* ******************************************** */
 .footer {
   background-color: #B4C5E4;
-  padding: 1em 0 0.8em 0;
+  padding: 0.5em 0 0.5em 0;
 }
 
 .footer__text {
@@ -277,6 +297,7 @@ p + p {
 
 .logos__link {
   color: #1a1919;
+  vertical-align: middle;
 }
 
 .logos__link + .logos__link {
