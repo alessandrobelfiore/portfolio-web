@@ -139,12 +139,15 @@ p + p {
 .nav {
     background-color: $bckg__darkest;
     color: $text__light;
+    /* background-color: $text__light; */
+    /* color: $text__dark; */
     padding: 1.5em 0;
 
     &__title {
         font-family: 'Quicksand', sans-serif;
         font-size: 2.4rem;
         font-weight: 300;
+        /* color: $text__dark; */
         color: $text__light;
     }
 
@@ -172,6 +175,7 @@ p + p {
 }
 
 .link--navbar {
+    /* color: $text__dark; */
     color: $text__light;
 }
 
@@ -200,6 +204,7 @@ p + p {
     width: 35px;
     height: 5px;
     background-color: $text__light;
+    /* background-color: $text__dark; */
     margin: 6px 0;
     transition: 0.4s;
 }

@@ -310,6 +310,8 @@ p + p {
 .nav {
   background-color: #3C3744;
   color: #FBFFF1;
+  /* background-color: $text__light; */
+  /* color: $text__dark; */
   padding: 1.5em 0;
 }
 
@@ -317,6 +319,7 @@ p + p {
   font-family: 'Quicksand', sans-serif;
   font-size: 2.4rem;
   font-weight: 300;
+  /* color: $text__dark; */
   color: #FBFFF1;
 }
 
@@ -345,6 +348,7 @@ p + p {
 }
 
 .link--navbar {
+  /* color: $text__dark; */
   color: #FBFFF1;
 }
 
@@ -378,6 +382,7 @@ p + p {
   width: 35px;
   height: 5px;
   background-color: #FBFFF1;
+  /* background-color: $text__dark; */
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
