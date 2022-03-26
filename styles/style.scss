@@ -108,13 +108,20 @@ p + p {
 /* ******************************************** */
 
 .footer {
-    background-color: $bckg__light;
+    /* background-color: $bckg__light; */
+    background-color: $bckg__darkest;
     padding: 0.5em 0 0.5em 0;
 
     &__text {
+        color: $text__light;
         font-family: 'Quicksand', sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.1rem;
         font-weight: 300;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -124,7 +131,8 @@ p + p {
 }
 
 .logos__link {
-    color: $text__dark;
+    /* color: $text__dark; */
+    color: $text__light;
     vertical-align: middle;
 }
 
@@ -137,18 +145,23 @@ p + p {
 /* ******************************************** */
 
 .nav {
-    background-color: $bckg__darkest;
-    color: $text__light;
-    /* background-color: $text__light; */
-    /* color: $text__dark; */
+    /* background-color: $bckg__darkest;
+    color: $text__light; */
+    background-color: $text__light;
+    color: $text__dark;
     padding: 1.5em 0;
+
+    &--container {
+        width: 90%;
+        max-width: 1600px;
+    }
 
     &__title {
         font-family: 'Quicksand', sans-serif;
         font-size: 2.4rem;
         font-weight: 300;
-        /* color: $text__dark; */
-        color: $text__light;
+        color: $text__dark;
+        /* color: $text__light; */
     }
 
     &__list {
@@ -174,9 +187,30 @@ p + p {
     }
 }
 
+@keyframes link--navbar {
+0%   { width : 0; }
+100% { width: 90%; }
+}
 .link--navbar {
-    /* color: $text__dark; */
-    color: $text__light;
+    position: relative;
+    &:hover {
+        opacity: 100%;
+    }
+}
+.link--navbar:hover::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background: red;
+    opacity: 30%;
+    animation-name: link--navbar;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .nav--visible {
@@ -203,8 +237,8 @@ p + p {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: $text__light;
-    /* background-color: $text__dark; */
+    /* background-color: $text__light; */
+    background-color: $text__dark;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -237,7 +271,7 @@ p + p {
         position: relative;
         display: flex;
         align-self: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         margin-left: 1em;
         overflow: auto;
     }
