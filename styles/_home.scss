@@ -28,8 +28,9 @@
     align-items: center;
 
     &__image {
+        object-fit: cover;
         position: relative;
-        transition: all .4s ease-in-out;
+        transition: all .6s ease-in-out;
         filter: grayscale(90%);
         &:hover{
             filter: grayscale(10%);
