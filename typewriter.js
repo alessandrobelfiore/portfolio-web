@@ -24,4 +24,4 @@ function cursor_animation() {
 cursor_animation();
 typeWrite(" friend,");
 
-/* originally coded by James */
+/* idea by James */

@@ -33,8 +33,12 @@ body {
     width: 100%;
 }
 
+.centered {
+    text-align: center;
+}
+
 .col + .col {
-    margin: 2em 0;
+    margin: 2em 0 0 0;
 }
 
 p + p {
@@ -74,6 +78,7 @@ p + p {
 
 .presentation {
     text-align: center;
+    margin-bottom: 1em;
 
     &__text {
         font-family: 'Nunito Sans', sans-serif;
@@ -132,6 +137,8 @@ p + p {
     &__copyright {
         display: flex;
         align-items: center;
+        justify-content: center;
+        margin: 0.75em 0 0.5em 0;
     }
 }
 
@@ -310,6 +317,10 @@ p + p {
     }
 
     .col + .col {
-        margin: 0 0 2em 2em;
+        margin: 0 0 0 2em;
+    }
+
+    .footer__copyright {
+        margin: 0;
     }
 }
