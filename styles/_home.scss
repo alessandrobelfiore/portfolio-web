@@ -28,8 +28,9 @@
     align-items: center;
 
     &__image {
+        object-fit: cover;
         position: relative;
-        transition: all .4s ease-in-out;
+        transition: all .6s ease-in-out;
         filter: grayscale(90%);
         &:hover{
             filter: grayscale(10%);
@@ -44,8 +45,11 @@
 }
 
 @media screen and  (min-width: 550px) {
-    @include image_dim(392px, 418px);
+    @include image_dim(393px, 430px);
 }
+/* @media screen and  (min-width: 550px) {
+    @include image_dim(361px, 480px);
+} */
 @media screen and (max-width: 550px) {
-    @include image_dim(327px, 358px);
+    @include image_dim(333px, 364px);
 }

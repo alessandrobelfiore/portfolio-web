@@ -1,0 +1,31 @@
+$img-width: 677px;
+$img-height: 508px;
+.butterfly {
+    object-fit: cover;
+    width: $img-width / 100 * 50;
+    height: $img-height / 100 * 50;
+    border-radius: 10%;
+    transition: all .6s ease-in-out;
+    filter: grayscale(100%);
+    &:hover{
+        filter: grayscale(0%);
+    }
+    &__div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .butterfly {
+        width: $img-width / 100 * 70;
+        height: $img-height / 100 * 70;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .butterfly {
+        width: $img-width / 100 * 80;
+        height: $img-height / 100 * 80;
+    }
+}
